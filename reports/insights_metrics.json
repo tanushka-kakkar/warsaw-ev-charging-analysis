@@ -1,0 +1,1634 @@
+{
+  "generated_utc": "2026-10-19T18:58:23+00:00",
+  "data_fingerprint": "2a5e090ba972d96c66865353df5977a6bd7b485aa4428d6914e3304f633bfe9c",
+  "source_rows": {
+    "sessions": 114000,
+    "stations": 65,
+    "customers": 8000,
+    "districts": 18,
+    "date_start": "2025-08-11",
+    "date_end": "2025-11-08",
+    "span_days": 90
+  },
+  "usage": {
+    "total_sessions": 114000,
+    "total_kwh": 4460265.070869321,
+    "mean_kwh": 39.12513220060808,
+    "min_kwh": 13.4010150199694,
+    "max_kwh": 75.99584058468777,
+    "sessions_per_customer": 14.25,
+    "sessions_per_station": 1753.8461538461538,
+    "sessions_per_day": 1266.6666666666667,
+    "daily_min": 1167,
+    "daily_max": 1350,
+    "peak_share_pct": 50.362280701754386,
+    "peak_per_hour_pct": 6.295285087719298,
+    "overnight_share_pct": 29.66578947368421,
+    "overnight_per_hour_pct": 2.4721491228070174,
+    "weekday_spread_pct": 9.66367272012063,
+    "weekday_max": {
+      "day_of_week": "Tuesday",
+      "sessions": 16727,
+      "share_pct": 14.67280701754386
+    },
+    "weekday_min": {
+      "day_of_week": "Sunday",
+      "sessions": 15253,
+      "share_pct": 13.379824561403508
+    },
+    "monthly": [
+      {
+        "month": "2025-08",
+        "sessions": 26581,
+        "active_days": 21,
+        "sessions_per_day": 1265.7619047619048
+      },
+      {
+        "month": "2025-09",
+        "sessions": 37882,
+        "active_days": 30,
+        "sessions_per_day": 1262.7333333333333
+      },
+      {
+        "month": "2025-10",
+        "sessions": 39486,
+        "active_days": 31,
+        "sessions_per_day": 1273.741935483871
+      },
+      {
+        "month": "2025-11",
+        "sessions": 10051,
+        "active_days": 8,
+        "sessions_per_day": 1256.375
+      }
+    ],
+    "monthly_min": {
+      "month": "2025-11",
+      "sessions": 10051,
+      "active_days": 8,
+      "sessions_per_day": 1256.375
+    },
+    "monthly_max": {
+      "month": "2025-10",
+      "sessions": 39486,
+      "active_days": 31,
+      "sessions_per_day": 1273.741935483871
+    },
+    "hourly": [
+      {
+        "hour": 0,
+        "sessions": 2809,
+        "share_pct": 2.4640350877192985,
+        "is_peak": false
+      },
+      {
+        "hour": 1,
+        "sessions": 2942,
+        "share_pct": 2.580701754385965,
+        "is_peak": false
+      },
+      {
+        "hour": 2,
+        "sessions": 2779,
+        "share_pct": 2.437719298245614,
+        "is_peak": false
+      },
+      {
+        "hour": 3,
+        "sessions": 2766,
+        "share_pct": 2.426315789473684,
+        "is_peak": false
+      },
+      {
+        "hour": 4,
+        "sessions": 2842,
+        "share_pct": 2.492982456140351,
+        "is_peak": false
+      },
+      {
+        "hour": 5,
+        "sessions": 2844,
+        "share_pct": 2.494736842105263,
+        "is_peak": false
+      },
+      {
+        "hour": 6,
+        "sessions": 2749,
+        "share_pct": 2.41140350877193,
+        "is_peak": false
+      },
+      {
+        "hour": 7,
+        "sessions": 2843,
+        "share_pct": 2.493859649122807,
+        "is_peak": false
+      },
+      {
+        "hour": 8,
+        "sessions": 7219,
+        "share_pct": 6.332456140350877,
+        "is_peak": true
+      },
+      {
+        "hour": 9,
+        "sessions": 7172,
+        "share_pct": 6.291228070175439,
+        "is_peak": true
+      },
+      {
+        "hour": 10,
+        "sessions": 7189,
+        "share_pct": 6.306140350877193,
+        "is_peak": true
+      },
+      {
+        "hour": 11,
+        "sessions": 7139,
+        "share_pct": 6.262280701754386,
+        "is_peak": true
+      },
+      {
+        "hour": 12,
+        "sessions": 7248,
+        "share_pct": 6.3578947368421055,
+        "is_peak": true
+      },
+      {
+        "hour": 13,
+        "sessions": 7099,
+        "share_pct": 6.22719298245614,
+        "is_peak": true
+      },
+      {
+        "hour": 14,
+        "sessions": 7103,
+        "share_pct": 6.230701754385965,
+        "is_peak": true
+      },
+      {
+        "hour": 15,
+        "sessions": 7244,
+        "share_pct": 6.3543859649122805,
+        "is_peak": true
+      },
+      {
+        "hour": 16,
+        "sessions": 5659,
+        "share_pct": 4.9640350877192985,
+        "is_peak": false
+      },
+      {
+        "hour": 17,
+        "sessions": 5705,
+        "share_pct": 5.004385964912281,
+        "is_peak": false
+      },
+      {
+        "hour": 18,
+        "sessions": 5641,
+        "share_pct": 4.948245614035088,
+        "is_peak": false
+      },
+      {
+        "hour": 19,
+        "sessions": 5763,
+        "share_pct": 5.055263157894737,
+        "is_peak": false
+      },
+      {
+        "hour": 20,
+        "sessions": 2820,
+        "share_pct": 2.473684210526316,
+        "is_peak": false
+      },
+      {
+        "hour": 21,
+        "sessions": 2826,
+        "share_pct": 2.4789473684210526,
+        "is_peak": false
+      },
+      {
+        "hour": 22,
+        "sessions": 2829,
+        "share_pct": 2.4815789473684213,
+        "is_peak": false
+      },
+      {
+        "hour": 23,
+        "sessions": 2770,
+        "share_pct": 2.4298245614035086,
+        "is_peak": false
+      }
+    ],
+    "daily": [
+      {
+        "date": "2025-08-11",
+        "sessions": 1231
+      },
+      {
+        "date": "2025-08-12",
+        "sessions": 1257
+      },
+      {
+        "date": "2025-08-13",
+        "sessions": 1204
+      },
+      {
+        "date": "2025-08-14",
+        "sessions": 1320
+      },
+      {
+        "date": "2025-08-15",
+        "sessions": 1277
+      },
+      {
+        "date": "2025-08-16",
+        "sessions": 1286
+      },
+      {
+        "date": "2025-08-17",
+        "sessions": 1285
+      },
+      {
+        "date": "2025-08-18",
+        "sessions": 1229
+      },
+      {
+        "date": "2025-08-19",
+        "sessions": 1271
+      },
+      {
+        "date": "2025-08-20",
+        "sessions": 1259
+      },
+      {
+        "date": "2025-08-21",
+        "sessions": 1318
+      },
+      {
+        "date": "2025-08-22",
+        "sessions": 1339
+      },
+      {
+        "date": "2025-08-23",
+        "sessions": 1239
+      },
+      {
+        "date": "2025-08-24",
+        "sessions": 1167
+      },
+      {
+        "date": "2025-08-25",
+        "sessions": 1287
+      },
+      {
+        "date": "2025-08-26",
+        "sessions": 1314
+      },
+      {
+        "date": "2025-08-27",
+        "sessions": 1250
+      },
+      {
+        "date": "2025-08-28",
+        "sessions": 1225
+      },
+      {
+        "date": "2025-08-29",
+        "sessions": 1222
+      },
+      {
+        "date": "2025-08-30",
+        "sessions": 1283
+      },
+      {
+        "date": "2025-08-31",
+        "sessions": 1318
+      },
+      {
+        "date": "2025-09-01",
+        "sessions": 1209
+      },
+      {
+        "date": "2025-09-02",
+        "sessions": 1278
+      },
+      {
+        "date": "2025-09-03",
+        "sessions": 1240
+      },
+      {
+        "date": "2025-09-04",
+        "sessions": 1238
+      },
+      {
+        "date": "2025-09-05",
+        "sessions": 1245
+      },
+      {
+        "date": "2025-09-06",
+        "sessions": 1236
+      },
+      {
+        "date": "2025-09-07",
+        "sessions": 1240
+      },
+      {
+        "date": "2025-09-08",
+        "sessions": 1268
+      },
+      {
+        "date": "2025-09-09",
+        "sessions": 1340
+      },
+      {
+        "date": "2025-09-10",
+        "sessions": 1224
+      },
+      {
+        "date": "2025-09-11",
+        "sessions": 1258
+      },
+      {
+        "date": "2025-09-12",
+        "sessions": 1296
+      },
+      {
+        "date": "2025-09-13",
+        "sessions": 1350
+      },
+      {
+        "date": "2025-09-14",
+        "sessions": 1260
+      },
+      {
+        "date": "2025-09-15",
+        "sessions": 1227
+      },
+      {
+        "date": "2025-09-16",
+        "sessions": 1304
+      },
+      {
+        "date": "2025-09-17",
+        "sessions": 1296
+      },
+      {
+        "date": "2025-09-18",
+        "sessions": 1259
+      },
+      {
+        "date": "2025-09-19",
+        "sessions": 1214
+      },
+      {
+        "date": "2025-09-20",
+        "sessions": 1241
+      },
+      {
+        "date": "2025-09-21",
+        "sessions": 1238
+      },
+      {
+        "date": "2025-09-22",
+        "sessions": 1292
+      },
+      {
+        "date": "2025-09-23",
+        "sessions": 1277
+      },
+      {
+        "date": "2025-09-24",
+        "sessions": 1203
+      },
+      {
+        "date": "2025-09-25",
+        "sessions": 1289
+      },
+      {
+        "date": "2025-09-26",
+        "sessions": 1313
+      },
+      {
+        "date": "2025-09-27",
+        "sessions": 1209
+      },
+      {
+        "date": "2025-09-28",
+        "sessions": 1325
+      },
+      {
+        "date": "2025-09-29",
+        "sessions": 1220
+      },
+      {
+        "date": "2025-09-30",
+        "sessions": 1293
+      },
+      {
+        "date": "2025-10-01",
+        "sessions": 1332
+      },
+      {
+        "date": "2025-10-02",
+        "sessions": 1305
+      },
+      {
+        "date": "2025-10-03",
+        "sessions": 1241
+      },
+      {
+        "date": "2025-10-04",
+        "sessions": 1251
+      },
+      {
+        "date": "2025-10-05",
+        "sessions": 1286
+      },
+      {
+        "date": "2025-10-06",
+        "sessions": 1255
+      },
+      {
+        "date": "2025-10-07",
+        "sessions": 1248
+      },
+      {
+        "date": "2025-10-08",
+        "sessions": 1219
+      },
+      {
+        "date": "2025-10-09",
+        "sessions": 1228
+      },
+      {
+        "date": "2025-10-10",
+        "sessions": 1301
+      },
+      {
+        "date": "2025-10-11",
+        "sessions": 1299
+      },
+      {
+        "date": "2025-10-12",
+        "sessions": 1309
+      },
+      {
+        "date": "2025-10-13",
+        "sessions": 1341
+      },
+      {
+        "date": "2025-10-14",
+        "sessions": 1323
+      },
+      {
+        "date": "2025-10-15",
+        "sessions": 1301
+      },
+      {
+        "date": "2025-10-16",
+        "sessions": 1182
+      },
+      {
+        "date": "2025-10-17",
+        "sessions": 1232
+      },
+      {
+        "date": "2025-10-18",
+        "sessions": 1290
+      },
+      {
+        "date": "2025-10-19",
+        "sessions": 1257
+      },
+      {
+        "date": "2025-10-20",
+        "sessions": 1256
+      },
+      {
+        "date": "2025-10-21",
+        "sessions": 1310
+      },
+      {
+        "date": "2025-10-22",
+        "sessions": 1286
+      },
+      {
+        "date": "2025-10-23",
+        "sessions": 1235
+      },
+      {
+        "date": "2025-10-24",
+        "sessions": 1265
+      },
+      {
+        "date": "2025-10-25",
+        "sessions": 1311
+      },
+      {
+        "date": "2025-10-26",
+        "sessions": 1266
+      },
+      {
+        "date": "2025-10-27",
+        "sessions": 1322
+      },
+      {
+        "date": "2025-10-28",
+        "sessions": 1278
+      },
+      {
+        "date": "2025-10-29",
+        "sessions": 1218
+      },
+      {
+        "date": "2025-10-30",
+        "sessions": 1287
+      },
+      {
+        "date": "2025-10-31",
+        "sessions": 1252
+      },
+      {
+        "date": "2025-11-01",
+        "sessions": 1266
+      },
+      {
+        "date": "2025-11-02",
+        "sessions": 1302
+      },
+      {
+        "date": "2025-11-03",
+        "sessions": 1230
+      },
+      {
+        "date": "2025-11-04",
+        "sessions": 1234
+      },
+      {
+        "date": "2025-11-05",
+        "sessions": 1228
+      },
+      {
+        "date": "2025-11-06",
+        "sessions": 1252
+      },
+      {
+        "date": "2025-11-07",
+        "sessions": 1248
+      },
+      {
+        "date": "2025-11-08",
+        "sessions": 1291
+      }
+    ],
+    "weekday": [
+      {
+        "day_of_week": "Monday",
+        "sessions": 16367,
+        "share_pct": 14.357017543859648
+      },
+      {
+        "day_of_week": "Tuesday",
+        "sessions": 16727,
+        "share_pct": 14.67280701754386
+      },
+      {
+        "day_of_week": "Wednesday",
+        "sessions": 16260,
+        "share_pct": 14.26315789473684
+      },
+      {
+        "day_of_week": "Thursday",
+        "sessions": 16396,
+        "share_pct": 14.382456140350877
+      },
+      {
+        "day_of_week": "Friday",
+        "sessions": 16445,
+        "share_pct": 14.425438596491228
+      },
+      {
+        "day_of_week": "Saturday",
+        "sessions": 16552,
+        "share_pct": 14.519298245614035
+      },
+      {
+        "day_of_week": "Sunday",
+        "sessions": 15253,
+        "share_pct": 13.379824561403508
+      }
+    ]
+  },
+  "revenue": {
+    "total_revenue": 11424001.703573812,
+    "avg_session_revenue": 100.2105412594194,
+    "revenue_per_station": 175753.87236267404,
+    "price": {
+      "points": [
+        {
+          "price": 1.851397,
+          "sessions": 33819,
+          "share_pct": 29.665789473684214
+        },
+        {
+          "price": 2.70452,
+          "sessions": 57413,
+          "share_pct": 50.36228070175438
+        },
+        {
+          "price": 3.256199,
+          "sessions": 22768,
+          "share_pct": 19.971929824561403
+        }
+      ],
+      "weighted_mean": 2.5612831349835528,
+      "min": 1.8513967524242176,
+      "max": 3.256198927234891,
+      "std": 0.5062393810954551
+    },
+    "price_std": 0.5062393810954551,
+    "district_price_min": 2.5511383716447,
+    "district_price_max": 2.571688267679671,
+    "district_price_spread_pct": 0.8055186760302036,
+    "operator_price_spread_pct": 0.31046612228782244,
+    "top3_district_revenue_share_pct": 47.83207244598603,
+    "top3_district_kwh_share_pct": 47.85171146330748,
+    "top3_district_session_share_pct": 47.82280701754386,
+    "operators": [
+      {
+        "operator_name": "Tauron",
+        "stations": 8,
+        "sessions": 14235,
+        "revenue": 1426780.863746401,
+        "kwh": 557338.7931785175,
+        "revenue_per_station": 178347.60796830012,
+        "sessions_per_station": 1779.375
+      },
+      {
+        "operator_name": "Ekoenergetyka",
+        "stations": 15,
+        "sessions": 26558,
+        "revenue": 2658482.095955054,
+        "kwh": 1036226.3297088336,
+        "revenue_per_station": 177232.13973033693,
+        "sessions_per_station": 1770.5333333333333
+      },
+      {
+        "operator_name": "GreenWay",
+        "stations": 15,
+        "sessions": 26475,
+        "revenue": 2644306.3434763327,
+        "kwh": 1033657.6452469507,
+        "revenue_per_station": 176287.08956508886,
+        "sessions_per_station": 1765.0
+      },
+      {
+        "operator_name": "Tesla",
+        "stations": 15,
+        "sessions": 26178,
+        "revenue": 2625083.276400764,
+        "kwh": 1025544.7845077511,
+        "revenue_per_station": 175005.55176005093,
+        "sessions_per_station": 1745.2
+      },
+      {
+        "operator_name": "Orlen Charge",
+        "stations": 12,
+        "sessions": 20554,
+        "revenue": 2069349.1239952613,
+        "kwh": 807497.5182272684,
+        "revenue_per_station": 172445.76033293843,
+        "sessions_per_station": 1712.8333333333333
+      }
+    ]
+  },
+  "capacity": {
+    "served_districts": 13,
+    "served_district_names": [
+      "Bemowo",
+      "Mokotów",
+      "Ochota",
+      "Rembertów",
+      "Targówek",
+      "Ursus",
+      "Ursynów",
+      "Wesoła",
+      "Wilanów",
+      "Wola",
+      "Włochy",
+      "Śródmieście",
+      "Żoliborz"
+    ],
+    "unserved_districts": 5,
+    "unserved_records": [
+      {
+        "district_name": "Praga Południe",
+        "income_tier": "Low-Mid",
+        "projected_evs": 2500,
+        "projected_plugs": 76,
+        "projected_regular_customers": 500,
+        "available_plugs": 0,
+        "stations": 0,
+        "actual_kwh": 0.0,
+        "coverage_pct": 0.0,
+        "evs_per_plug": null,
+        "kwh_per_projected_ev": 0.0,
+        "readiness_rank": 15
+      },
+      {
+        "district_name": "Białołęka",
+        "income_tier": "Low-Mid",
+        "projected_evs": 2400,
+        "projected_plugs": 73,
+        "projected_regular_customers": 480,
+        "available_plugs": 0,
+        "stations": 0,
+        "actual_kwh": 0.0,
+        "coverage_pct": 0.0,
+        "evs_per_plug": null,
+        "kwh_per_projected_ev": 0.0,
+        "readiness_rank": 18
+      },
+      {
+        "district_name": "Bielany",
+        "income_tier": "Mid-Range",
+        "projected_evs": 2300,
+        "projected_plugs": 70,
+        "projected_regular_customers": 460,
+        "available_plugs": 0,
+        "stations": 0,
+        "actual_kwh": 0.0,
+        "coverage_pct": 0.0,
+        "evs_per_plug": null,
+        "kwh_per_projected_ev": 0.0,
+        "readiness_rank": 14
+      },
+      {
+        "district_name": "Wawer",
+        "income_tier": "Low-Mid",
+        "projected_evs": 1100,
+        "projected_plugs": 33,
+        "projected_regular_customers": 220,
+        "available_plugs": 0,
+        "stations": 0,
+        "actual_kwh": 0.0,
+        "coverage_pct": 0.0,
+        "evs_per_plug": null,
+        "kwh_per_projected_ev": 0.0,
+        "readiness_rank": 16
+      },
+      {
+        "district_name": "Praga Północ",
+        "income_tier": "Low-Mid",
+        "projected_evs": 1000,
+        "projected_plugs": 30,
+        "projected_regular_customers": 200,
+        "available_plugs": 0,
+        "stations": 0,
+        "actual_kwh": 0.0,
+        "coverage_pct": 0.0,
+        "evs_per_plug": null,
+        "kwh_per_projected_ev": 0.0,
+        "readiness_rank": 17
+      }
+    ],
+    "unserved_projected_evs": 9300,
+    "unserved_planned_plugs": 282,
+    "total_projected_evs": 35000,
+    "total_planned_plugs": 1061,
+    "total_available_plugs": 390,
+    "plug_plan_coverage_pct": 36.757775683317625,
+    "wola": {
+      "district_name": "Wola",
+      "income_tier": "Mid-Range",
+      "projected_evs": 3300,
+      "projected_plugs": 100,
+      "projected_regular_customers": 660,
+      "available_plugs": 12,
+      "stations": 2,
+      "actual_kwh": 139796.55451336078,
+      "coverage_pct": 12.0,
+      "evs_per_plug": 275.0,
+      "kwh_per_projected_ev": 42.36259227677599,
+      "readiness_rank": 13
+    },
+    "wesola": {
+      "district_name": "Wesoła",
+      "income_tier": "Low-Mid",
+      "projected_evs": 700,
+      "projected_plugs": 21,
+      "projected_regular_customers": 140,
+      "available_plugs": 66,
+      "stations": 11,
+      "actual_kwh": 767641.2567722839,
+      "coverage_pct": 314.2857142857143,
+      "evs_per_plug": 10.606060606060606,
+      "kwh_per_projected_ev": 1096.6303668175485,
+      "readiness_rank": 1
+    }
+  },
+  "stations": {
+    "station_count": 65,
+    "mean_sessions": 1753.8461538461538,
+    "busiest_sessions": 1856.0,
+    "busiest_ratio": 1.0582456140350878,
+    "top": [
+      {
+        "station_id": 163,
+        "district_name": "Wesoła",
+        "operator_name": "Tauron",
+        "sessions": 1856
+      },
+      {
+        "station_id": 150,
+        "district_name": "Wesoła",
+        "operator_name": "GreenWay",
+        "sessions": 1851
+      },
+      {
+        "station_id": 27,
+        "district_name": "Wesoła",
+        "operator_name": "GreenWay",
+        "sessions": 1825
+      },
+      {
+        "station_id": 92,
+        "district_name": "Ursynów",
+        "operator_name": "Ekoenergetyka",
+        "sessions": 1824
+      },
+      {
+        "station_id": 36,
+        "district_name": "Ursynów",
+        "operator_name": "Ekoenergetyka",
+        "sessions": 1811
+      },
+      {
+        "station_id": 68,
+        "district_name": "Włochy",
+        "operator_name": "GreenWay",
+        "sessions": 1811
+      },
+      {
+        "station_id": 124,
+        "district_name": "Rembertów",
+        "operator_name": "Ekoenergetyka",
+        "sessions": 1810
+      },
+      {
+        "station_id": 136,
+        "district_name": "Wesoła",
+        "operator_name": "GreenWay",
+        "sessions": 1809
+      }
+    ]
+  },
+  "customers": {
+    "tiers": [
+      {
+        "income_tier": "High",
+        "customers": 1190,
+        "sessions": 16944,
+        "avg_cost": 142.44944462832208,
+        "avg_price": 2.561360965158512,
+        "kwh_per_session": 55.63906456008111,
+        "avg_battery": 85.63335103871577,
+        "sessions_per_customer": 14.238655462184873
+      },
+      {
+        "income_tier": "Mid-Range",
+        "customers": 2820,
+        "sessions": 40220,
+        "avg_cost": 117.77817180116722,
+        "avg_price": 2.5604579953139015,
+        "kwh_per_session": 45.99273238200945,
+        "avg_battery": 70.71638736946792,
+        "sessions_per_customer": 14.26241134751773
+      },
+      {
+        "income_tier": "Low-Mid",
+        "customers": 3990,
+        "sessions": 56836,
+        "avg_cost": 75.18650580527442,
+        "avg_price": 2.562509990269432,
+        "kwh_per_session": 29.34212584557124,
+        "avg_battery": 45.15003167006827,
+        "sessions_per_customer": 14.244611528822055
+      }
+    ],
+    "concentration": {
+      "customer_count": 8000,
+      "total_kwh": 4460265.070869321,
+      "top10_kwh": 15879.027638241489,
+      "top10_share_pct": 0.3560108510579308,
+      "top10_uniform_share_pct": 0.125,
+      "max_customer_kwh": 1898.1107018569962,
+      "max_customer_id": "C5499"
+    }
+  },
+  "quality": {
+    "constant_plugs": true,
+    "plugs_count": 6,
+    "unserved_districts": 5,
+    "districts_total": 18,
+    "partial_months": [
+      {
+        "month": "2025-08",
+        "active_days": 21
+      },
+      {
+        "month": "2025-09",
+        "active_days": 30
+      },
+      {
+        "month": "2025-10",
+        "active_days": 31
+      },
+      {
+        "month": "2025-11",
+        "active_days": 8
+      }
+    ],
+    "duplicate_customer_start_minutes": 4,
+    "same_station_start_minutes": 924,
+    "missing_cells": 0,
+    "synthetic_signal": "All charged energy sits between 50% and 80% of the vehicle battery capacity and every vehicle model has a mean ratio near 0.65.",
+    "income_tier_columns": [
+      "customers.income_tier",
+      "charging_stations.income_tier",
+      "districts.income_tier"
+    ]
+  },
+  "ml": {
+    "available": true,
+    "selected_label": "Ridge Regression (alpha=0.1)",
+    "target": "kwh_charged",
+    "test": {
+      "n": 17674,
+      "mae": 4.518161574195481,
+      "rmse": 5.426481969221999,
+      "r2": 0.8187435763576203,
+      "mape_pct": 11.890640419304699,
+      "mean_actual": 39.110123429218,
+      "mean_predicted": 39.135346649805825,
+      "mean_residual": -0.02522322058782785,
+      "median_absolute_error": 4.062834816545317,
+      "max_absolute_error": 14.443848062042875,
+      "relative_rmse_pct": 13.8748781477075
+    },
+    "validation": {
+      "n": 17898,
+      "mae": 4.537420780806834,
+      "rmse": 5.452766532657859,
+      "r2": 0.8164426814917419,
+      "mape_pct": 11.895742408311651,
+      "mean_actual": 39.19130501107926,
+      "mean_predicted": 39.08684470065515,
+      "mean_residual": 0.10446031042411123,
+      "median_absolute_error": 4.145380611059078,
+      "max_absolute_error": 14.37466734546156,
+      "relative_rmse_pct": 13.913204806822277
+    },
+    "baseline": {
+      "n": 17674,
+      "mae": 10.324308144059044,
+      "rmse": 12.745946573580854,
+      "r2": -1.9930911476784274e-06,
+      "mape_pct": 31.858261427164475,
+      "mean_actual": 39.110123429218,
+      "mean_predicted": 39.12811774099856,
+      "mean_residual": -0.0179943117805662,
+      "median_absolute_error": 8.97472645692013,
+      "max_absolute_error": 36.851335766442716,
+      "relative_rmse_pct": 32.58989094383358
+    },
+    "heuristic": {
+      "n": 17674,
+      "mae": 4.518292537331338,
+      "rmse": 5.426405007381069,
+      "r2": 0.8187487177104159,
+      "mape_pct": 11.886058847727211,
+      "mean_actual": 39.110123429218,
+      "mean_predicted": 39.11954094276,
+      "mean_residual": -0.009417513541998157,
+      "median_absolute_error": 4.057718436027329,
+      "max_absolute_error": 14.245059316683879,
+      "relative_rmse_pct": 13.874681365303912
+    },
+    "improvement_vs_dummy": {
+      "mae_reduction_pct": 56.237633445729884,
+      "rmse_reduction_pct": 57.425822100417925,
+      "mape_reduction_pct": 62.67643026757905,
+      "r2_gain": 0.818745569448768
+    },
+    "station_day": {
+      "n": 910,
+      "mae": 19.17394412981363,
+      "rmse": 24.019390005707077,
+      "r2": 0.9809678093401074,
+      "mape_pct": 2.5909210496260573,
+      "mean_actual": 759.5959576791197,
+      "mean_predicted": 760.0858425150199,
+      "mean_residual": -0.48988483590029636,
+      "median_absolute_error": 15.726625137649023,
+      "max_absolute_error": 90.43069727667148,
+      "relative_rmse_pct": 3.1621271496884034,
+      "baseline": {
+        "n": 910,
+        "mae": 46.79628151890768,
+        "rmse": 57.369902585675305,
+        "r2": 0.8914241952950801,
+        "mape_pct": 6.339113698979467,
+        "mean_actual": 759.5959576791197,
+        "mean_predicted": 759.9454428070425,
+        "mean_residual": -0.3494851279227795,
+        "median_absolute_error": 39.92010794803775,
+        "max_absolute_error": 193.4653939168495,
+        "relative_rmse_pct": 7.552686662652093
+      },
+      "grouping": [
+        "station_id",
+        "district_name",
+        "session_date"
+      ]
+    },
+    "district_day": {
+      "n": 182,
+      "mae": 37.96041750096926,
+      "rmse": 51.05442770860781,
+      "r2": 0.9996030900027506,
+      "mape_pct": 1.167099098718518,
+      "mean_actual": 3797.979788395598,
+      "mean_predicted": 3800.429212575099,
+      "mean_residual": -2.4494241795014746,
+      "median_absolute_error": 29.54857894215047,
+      "max_absolute_error": 202.72027910588258,
+      "relative_rmse_pct": 1.34425222231567,
+      "baseline": {
+        "n": 182,
+        "mae": 91.92256407943115,
+        "rmse": 121.85645091561612,
+        "r2": 0.9977388870184011,
+        "mape_pct": 2.84759158571882,
+        "mean_actual": 3797.979788395598,
+        "mean_predicted": 3799.727214035212,
+        "mean_residual": -1.7474256396138792,
+        "median_absolute_error": 68.11038149079582,
+        "max_absolute_error": 435.2721372744991,
+        "relative_rmse_pct": 3.2084544338002554
+      },
+      "grouping": [
+        "district_name",
+        "session_date"
+      ]
+    },
+    "feature_importance": [
+      {
+        "feature": "battery_capacity_kwh",
+        "importance_mean": 9.751856251085396,
+        "importance_std": 0.14961950965156243
+      },
+      {
+        "feature": "customer_income_tier",
+        "importance_mean": 0.26431999098995596,
+        "importance_std": 0.0109647113499346
+      },
+      {
+        "feature": "car_model",
+        "importance_mean": 0.11802435542470527,
+        "importance_std": 0.008138652164617498
+      },
+      {
+        "feature": "operator_name",
+        "importance_mean": 0.001112358657641721,
+        "importance_std": 0.0012909401117460766
+      },
+      {
+        "feature": "longitude",
+        "importance_mean": 0.0007763709775398198,
+        "importance_std": 0.0004674896883900769
+      },
+      {
+        "feature": "latitude",
+        "importance_mean": 0.0004909297870931084,
+        "importance_std": 0.00035691035754958797
+      },
+      {
+        "feature": "hour",
+        "importance_mean": 0.0001526246790723107,
+        "importance_std": 0.0005646415581711808
+      },
+      {
+        "feature": "cost_per_kwh",
+        "importance_mean": 0.00010932643748127192,
+        "importance_std": 0.0004492403601734002
+      },
+      {
+        "feature": "projected_evs",
+        "importance_mean": 6.7107336342076e-06,
+        "importance_std": 5.362763585495704e-06
+      },
+      {
+        "feature": "projected_regular_customers",
+        "importance_mean": 6.710733344306163e-06,
+        "importance_std": 5.3627633543368705e-06
+      },
+      {
+        "feature": "plugs_count",
+        "importance_mean": 0.0,
+        "importance_std": 0.0
+      },
+      {
+        "feature": "projected_plugs",
+        "importance_mean": -3.3809448442667643e-06,
+        "importance_std": 2.6902047755726973e-06
+      },
+      {
+        "feature": "hour_cos",
+        "importance_mean": -3.937289722113491e-05,
+        "importance_std": 0.00014331191168684692
+      },
+      {
+        "feature": "hour_sin",
+        "importance_mean": -4.6504422990345516e-05,
+        "importance_std": 0.0001392896632698577
+      },
+      {
+        "feature": "dow_sin",
+        "importance_mean": -6.149877597696473e-05,
+        "importance_std": 6.94785316360889e-05
+      },
+      {
+        "feature": "dow_cos",
+        "importance_mean": -7.162913543812266e-05,
+        "importance_std": 0.0001817750454087097
+      },
+      {
+        "feature": "is_weekend",
+        "importance_mean": -0.00012042526165245704,
+        "importance_std": 7.126324479586671e-05
+      },
+      {
+        "feature": "day_of_week",
+        "importance_mean": -0.000153216521288968,
+        "importance_std": 5.064494943502889e-05
+      },
+      {
+        "feature": "evs_per_projected_plug",
+        "importance_mean": -0.0003343318764430947,
+        "importance_std": 0.00013219716316954374
+      },
+      {
+        "feature": "district_name",
+        "importance_mean": -0.0007864993870587255,
+        "importance_std": 0.0005486006464120161
+      },
+      {
+        "feature": "station_income_tier",
+        "importance_mean": -0.0008403357914462007,
+        "importance_std": 0.0006164712256265373
+      }
+    ],
+    "data_fingerprint": "2a5e090ba972d96c66865353df5977a6bd7b485aa4428d6914e3304f633bfe9c",
+    "generated_utc": "2026-10-19T18:28:48+00:00"
+  },
+  "planning": [
+    {
+      "district_name": "Wesoła",
+      "income_tier": "Low-Mid",
+      "projected_evs": 700,
+      "projected_plugs": 21,
+      "projected_regular_customers": 140,
+      "available_plugs": 66,
+      "stations": 11,
+      "actual_kwh": 767641.2567722839,
+      "coverage_pct": 314.2857142857143,
+      "evs_per_plug": 10.606060606060606,
+      "kwh_per_projected_ev": 1096.6303668175485,
+      "readiness_rank": 1
+    },
+    {
+      "district_name": "Włochy",
+      "income_tier": "Mid-Range",
+      "projected_evs": 1200,
+      "projected_plugs": 36,
+      "projected_regular_customers": 240,
+      "available_plugs": 36,
+      "stations": 6,
+      "actual_kwh": 409485.9492908741,
+      "coverage_pct": 100.0,
+      "evs_per_plug": 33.333333333333336,
+      "kwh_per_projected_ev": 341.23829107572845,
+      "readiness_rank": 2
+    },
+    {
+      "district_name": "Ursynów",
+      "income_tier": "Mid-Range",
+      "projected_evs": 2900,
+      "projected_plugs": 88,
+      "projected_regular_customers": 580,
+      "available_plugs": 72,
+      "stations": 12,
+      "actual_kwh": 820629.81821468,
+      "coverage_pct": 81.81818181818183,
+      "evs_per_plug": 40.27777777777778,
+      "kwh_per_projected_ev": 282.9757993843724,
+      "readiness_rank": 3
+    },
+    {
+      "district_name": "Targówek",
+      "income_tier": "Low-Mid",
+      "projected_evs": 1400,
+      "projected_plugs": 42,
+      "projected_regular_customers": 280,
+      "available_plugs": 30,
+      "stations": 5,
+      "actual_kwh": 341296.6616611311,
+      "coverage_pct": 71.42857142857143,
+      "evs_per_plug": 46.666666666666664,
+      "kwh_per_projected_ev": 243.78332975795078,
+      "readiness_rank": 4
+    },
+    {
+      "district_name": "Rembertów",
+      "income_tier": "Low-Mid",
+      "projected_evs": 600,
+      "projected_plugs": 18,
+      "projected_regular_customers": 120,
+      "available_plugs": 12,
+      "stations": 2,
+      "actual_kwh": 138615.3879890079,
+      "coverage_pct": 66.66666666666666,
+      "evs_per_plug": 50.0,
+      "kwh_per_projected_ev": 231.0256466483465,
+      "readiness_rank": 5
+    },
+    {
+      "district_name": "Ochota",
+      "income_tier": "Mid-Range",
+      "projected_evs": 1600,
+      "projected_plugs": 49,
+      "projected_regular_customers": 320,
+      "available_plugs": 30,
+      "stations": 5,
+      "actual_kwh": 339168.44672560587,
+      "coverage_pct": 61.224489795918366,
+      "evs_per_plug": 53.333333333333336,
+      "kwh_per_projected_ev": 211.98027920350367,
+      "readiness_rank": 6
+    },
+    {
+      "district_name": "Wilanów",
+      "income_tier": "High",
+      "projected_evs": 3100,
+      "projected_plugs": 94,
+      "projected_regular_customers": 620,
+      "available_plugs": 48,
+      "stations": 8,
+      "actual_kwh": 546042.0972241105,
+      "coverage_pct": 51.06382978723404,
+      "evs_per_plug": 64.58333333333333,
+      "kwh_per_projected_ev": 176.1426120077776,
+      "readiness_rank": 7
+    },
+    {
+      "district_name": "Ursus",
+      "income_tier": "Low-Mid",
+      "projected_evs": 1100,
+      "projected_plugs": 33,
+      "projected_regular_customers": 220,
+      "available_plugs": 12,
+      "stations": 2,
+      "actual_kwh": 133624.38514122507,
+      "coverage_pct": 36.36363636363637,
+      "evs_per_plug": 91.66666666666667,
+      "kwh_per_projected_ev": 121.47671376475006,
+      "readiness_rank": 8
+    },
+    {
+      "district_name": "Mokotów",
+      "income_tier": "Mid-Range",
+      "projected_evs": 3500,
+      "projected_plugs": 106,
+      "projected_regular_customers": 700,
+      "available_plugs": 30,
+      "stations": 5,
+      "actual_kwh": 339212.7928887975,
+      "coverage_pct": 28.30188679245283,
+      "evs_per_plug": 116.66666666666667,
+      "kwh_per_projected_ev": 96.91794082537072,
+      "readiness_rank": 9
+    },
+    {
+      "district_name": "Śródmieście",
+      "income_tier": "High",
+      "projected_evs": 2700,
+      "projected_plugs": 82,
+      "projected_regular_customers": 540,
+      "available_plugs": 18,
+      "stations": 3,
+      "actual_kwh": 205791.6851526574,
+      "coverage_pct": 21.951219512195124,
+      "evs_per_plug": 150.0,
+      "kwh_per_projected_ev": 76.21914264913237,
+      "readiness_rank": 10
+    },
+    {
+      "district_name": "Bemowo",
+      "income_tier": "Low-Mid",
+      "projected_evs": 1800,
+      "projected_plugs": 55,
+      "projected_regular_customers": 360,
+      "available_plugs": 12,
+      "stations": 2,
+      "actual_kwh": 137870.72850804514,
+      "coverage_pct": 21.818181818181817,
+      "evs_per_plug": 150.0,
+      "kwh_per_projected_ev": 76.59484917113619,
+      "readiness_rank": 11
+    },
+    {
+      "district_name": "Żoliborz",
+      "income_tier": "High",
+      "projected_evs": 1800,
+      "projected_plugs": 55,
+      "projected_regular_customers": 360,
+      "available_plugs": 12,
+      "stations": 2,
+      "actual_kwh": 141089.306787542,
+      "coverage_pct": 21.818181818181817,
+      "evs_per_plug": 150.0,
+      "kwh_per_projected_ev": 78.38294821530111,
+      "readiness_rank": 12
+    },
+    {
+      "district_name": "Wola",
+      "income_tier": "Mid-Range",
+      "projected_evs": 3300,
+      "projected_plugs": 100,
+      "projected_regular_customers": 660,
+      "available_plugs": 12,
+      "stations": 2,
+      "actual_kwh": 139796.55451336078,
+      "coverage_pct": 12.0,
+      "evs_per_plug": 275.0,
+      "kwh_per_projected_ev": 42.36259227677599,
+      "readiness_rank": 13
+    },
+    {
+      "district_name": "Bielany",
+      "income_tier": "Mid-Range",
+      "projected_evs": 2300,
+      "projected_plugs": 70,
+      "projected_regular_customers": 460,
+      "available_plugs": 0,
+      "stations": 0,
+      "actual_kwh": 0.0,
+      "coverage_pct": 0.0,
+      "evs_per_plug": null,
+      "kwh_per_projected_ev": 0.0,
+      "readiness_rank": 14
+    },
+    {
+      "district_name": "Praga Południe",
+      "income_tier": "Low-Mid",
+      "projected_evs": 2500,
+      "projected_plugs": 76,
+      "projected_regular_customers": 500,
+      "available_plugs": 0,
+      "stations": 0,
+      "actual_kwh": 0.0,
+      "coverage_pct": 0.0,
+      "evs_per_plug": null,
+      "kwh_per_projected_ev": 0.0,
+      "readiness_rank": 15
+    },
+    {
+      "district_name": "Wawer",
+      "income_tier": "Low-Mid",
+      "projected_evs": 1100,
+      "projected_plugs": 33,
+      "projected_regular_customers": 220,
+      "available_plugs": 0,
+      "stations": 0,
+      "actual_kwh": 0.0,
+      "coverage_pct": 0.0,
+      "evs_per_plug": null,
+      "kwh_per_projected_ev": 0.0,
+      "readiness_rank": 16
+    },
+    {
+      "district_name": "Praga Północ",
+      "income_tier": "Low-Mid",
+      "projected_evs": 1000,
+      "projected_plugs": 30,
+      "projected_regular_customers": 200,
+      "available_plugs": 0,
+      "stations": 0,
+      "actual_kwh": 0.0,
+      "coverage_pct": 0.0,
+      "evs_per_plug": null,
+      "kwh_per_projected_ev": 0.0,
+      "readiness_rank": 17
+    },
+    {
+      "district_name": "Białołęka",
+      "income_tier": "Low-Mid",
+      "projected_evs": 2400,
+      "projected_plugs": 73,
+      "projected_regular_customers": 480,
+      "available_plugs": 0,
+      "stations": 0,
+      "actual_kwh": 0.0,
+      "coverage_pct": 0.0,
+      "evs_per_plug": null,
+      "kwh_per_projected_ev": 0.0,
+      "readiness_rank": 18
+    }
+  ],
+  "districts": [
+    {
+      "district_name": "Ursynów",
+      "sessions": 20956,
+      "kwh": 820629.81821468,
+      "revenue": 2101299.588497952,
+      "stations": 12,
+      "customers": 7416,
+      "session_share_pct": 18.38245614035088,
+      "kwh_share_pct": 18.398678221488222,
+      "revenue_share_pct": 18.39372614799764,
+      "rank": 1
+    },
+    {
+      "district_name": "Wesoła",
+      "sessions": 19606,
+      "kwh": 767641.2567722839,
+      "revenue": 1964951.35369491,
+      "stations": 11,
+      "customers": 7276,
+      "session_share_pct": 17.198245614035088,
+      "kwh_share_pct": 17.210664491352034,
+      "revenue_share_pct": 17.200201861666454,
+      "rank": 2
+    },
+    {
+      "district_name": "Wilanów",
+      "sessions": 13956,
+      "kwh": 546042.0972241105,
+      "revenue": 1398085.828891241,
+      "stations": 8,
+      "customers": 6541,
+      "session_share_pct": 12.242105263157894,
+      "kwh_share_pct": 12.242368750467223,
+      "revenue_share_pct": 12.238144436321932,
+      "rank": 3
+    },
+    {
+      "district_name": "Włochy",
+      "sessions": 10447,
+      "kwh": 409485.9492908741,
+      "revenue": 1051339.580550915,
+      "stations": 6,
+      "customers": 5876,
+      "session_share_pct": 9.164035087719299,
+      "kwh_share_pct": 9.180753672361089,
+      "revenue_share_pct": 9.202901118458524,
+      "rank": 4
+    },
+    {
+      "district_name": "Targówek",
+      "sessions": 8746,
+      "kwh": 341296.6616611311,
+      "revenue": 876870.2015783692,
+      "stations": 5,
+      "customers": 5312,
+      "session_share_pct": 7.671929824561404,
+      "kwh_share_pct": 7.651936740042474,
+      "revenue_share_pct": 7.675683393009779,
+      "rank": 5
+    },
+    {
+      "district_name": "Mokotów",
+      "sessions": 8655,
+      "kwh": 339212.7928887975,
+      "revenue": 871968.22454083,
+      "stations": 5,
+      "customers": 5257,
+      "session_share_pct": 7.592105263157895,
+      "kwh_share_pct": 7.605216001718117,
+      "revenue_share_pct": 7.6327739365449245,
+      "rank": 6
+    },
+    {
+      "district_name": "Ochota",
+      "sessions": 8696,
+      "kwh": 339168.44672560587,
+      "revenue": 868531.8880236183,
+      "stations": 5,
+      "customers": 5302,
+      "session_share_pct": 7.628070175438596,
+      "kwh_share_pct": 7.604221752217537,
+      "revenue_share_pct": 7.602693964514311,
+      "rank": 7
+    },
+    {
+      "district_name": "Śródmieście",
+      "sessions": 5259,
+      "kwh": 205791.6851526574,
+      "revenue": 525634.5217077736,
+      "stations": 3,
+      "customers": 3885,
+      "session_share_pct": 4.613157894736842,
+      "kwh_share_pct": 4.613889127278884,
+      "revenue_share_pct": 4.601141835818682,
+      "rank": 8
+    },
+    {
+      "district_name": "Żoliborz",
+      "sessions": 3595,
+      "kwh": 141089.306787542,
+      "revenue": 359931.26359651145,
+      "stations": 2,
+      "customers": 2867,
+      "session_share_pct": 3.153508771929824,
+      "kwh_share_pct": 3.1632493707384803,
+      "revenue_share_pct": 3.1506583501638734,
+      "rank": 9
+    },
+    {
+      "district_name": "Wola",
+      "sessions": 3569,
+      "kwh": 139796.55451336078,
+      "revenue": 357333.0081318861,
+      "stations": 2,
+      "customers": 2904,
+      "session_share_pct": 3.130701754385965,
+      "kwh_share_pct": 3.1342656163283578,
+      "revenue_share_pct": 3.127914520706875,
+      "rank": 10
+    },
+    {
+      "district_name": "Rembertów",
+      "sessions": 3565,
+      "kwh": 138615.3879890079,
+      "revenue": 354184.95544346754,
+      "stations": 2,
+      "customers": 2856,
+      "session_share_pct": 3.1271929824561404,
+      "kwh_share_pct": 3.1077836358723694,
+      "revenue_share_pct": 3.1003580411990534,
+      "rank": 11
+    },
+    {
+      "district_name": "Bemowo",
+      "sessions": 3530,
+      "kwh": 137870.72850804514,
+      "revenue": 352143.76513742993,
+      "stations": 2,
+      "customers": 2821,
+      "session_share_pct": 3.0964912280701755,
+      "kwh_share_pct": 3.0910882272109816,
+      "revenue_share_pct": 3.0824904816607956,
+      "rank": 12
+    },
+    {
+      "district_name": "Ursus",
+      "sessions": 3420,
+      "kwh": 133624.38514122507,
+      "revenue": 341727.5237789089,
+      "stations": 2,
+      "customers": 2774,
+      "session_share_pct": 3.0,
+      "kwh_share_pct": 2.995884392924235,
+      "revenue_share_pct": 2.991311911937172,
+      "rank": 13
+    }
+  ],
+  "figures": [
+    {
+      "file": "figures/insights_coverage.png",
+      "caption": "Plug-plan coverage by district: five districts at 0%, Wola at 12%."
+    },
+    {
+      "file": "figures/insights_hourly_demand.png",
+      "caption": "Sessions by hour: half of all sessions start in the 08:00-15:59 window."
+    },
+    {
+      "file": "figures/insights_daily_trend.png",
+      "caption": "Daily sessions: stable demand around 1,267 sessions per day with no growth trend."
+    },
+    {
+      "file": "figures/insights_district_concentration.png",
+      "caption": "Energy by district: the top three districts deliver 47.9% of all kWh."
+    },
+    {
+      "file": "figures/insights_income_decomposition.png",
+      "caption": "Customer income tiers: kWh per session and battery capacity move together."
+    },
+    {
+      "file": "figures/insights_readiness.png",
+      "caption": "Readiness chart: realised kWh per projected EV, with built coverage labels."
+    }
+  ]
+}

@@ -6,7 +6,7 @@ The project includes reusable preprocessing code, a leakage-safe chronological e
 
 > **Project status: Completed — v1.0.0 (2026-10-20).**
 >
-> The final model has been trained, the chronological holdout has been evaluated, 12 tests pass, and both reports are generated. This tag marks the reproducible baseline and is not a claim of production readiness.
+> The final model has been trained, the chronological holdout has been evaluated, 14 tests pass, and all reports (model evaluation plus SQL/visual insights) are generated. This tag marks the reproducible baseline and is not a claim of production readiness.
 
 ## Headline results
 
@@ -85,9 +85,12 @@ All imputers, encoders, scalers and estimators live inside the saved scikit-lear
 │   ├── model_evaluation_report.md
 │   ├── model_evaluation_report.html   # self-contained offline HTML
 │   ├── model_metrics.json
+│   ├── insights_report.md             # SQL/visual insights and recommendations
+│   ├── insights_report.html           # self-contained offline HTML
+│   ├── insights_metrics.json
 │   ├── feature_importance.csv
 │   ├── segment_metrics_*.csv
-│   └── figures/*.png
+│   └── figures/*.png                  # model diagnostics + insights_*.png
 ├── src/
 │   ├── config.py
 │   ├── data_loader.py
@@ -96,12 +99,14 @@ All imputers, encoders, scalers and estimators live inside the saved scikit-lear
 │   ├── train.py
 │   ├── evaluate.py
 │   ├── reporting.py
+│   ├── insights.py
 │   └── predict.py
 ├── tests/
 │   ├── conftest.py
 │   ├── test_preprocessing.py
 │   ├── test_training.py
-│   └── test_reporting.py
+│   ├── test_reporting.py
+│   └── test_insights.py
 ├── requirements.txt
 └── README.md
 ```
@@ -148,12 +153,21 @@ python -m src.train --data-dir "C:\path\to\Warsaw EV Charging"
 
 # 2. Evaluate once on the chronological test set; regenerates metrics, figures and reports
 python -m src.evaluate --data-dir "C:\path\to\Warsaw EV Charging"
+
+# 3. Build the SQL/visual insights report and its six charts
+python -m src.insights --data-dir "C:\path\to\Warsaw EV Charging"
 ```
 
 The evaluation report is written to:
 
 - `reports/model_evaluation_report.md`
 - `reports/model_evaluation_report.html` (open in any browser; images are embedded and no internet is required)
+
+The insights report is written to:
+
+- `reports/insights_report.md`
+- `reports/insights_report.html` (self-contained; six embedded charts, no internet required)
+- `reports/insights_metrics.json` and `reports/figures/insights_*.png`
 
 The trained pipeline is saved at `models/best_model.joblib`; metadata is at `models/model_metadata.json`.
 
@@ -185,7 +199,7 @@ Output includes `predicted_kwh`, `predicted_total_cost` (predicted kWh × suppli
 python -m pytest -q
 ```
 
-Verified in this environment: **12 tests passed**. Tests cover schema validation, duplicate/invalid-record cleaning, target leakage guards, chronological split integrity, preprocessing fit/transform, unknown categories, metric calculations, model save/load, prediction invariance to the target column, inference joins, and Markdown/HTML report generation with offline image embedding.
+Verified in this environment: **14 tests passed**. Tests cover schema validation, duplicate/invalid-record cleaning, target leakage guards, chronological split integrity, preprocessing fit/transform, unknown categories, metric calculations, model save/load, prediction invariance to the target column, inference joins, Markdown/HTML report generation with offline image embedding, and the SQL/visual insights generator.
 
 Small synthetic data are used only for unit tests; all reported metrics come from the real configured dataset.
 
@@ -216,6 +230,21 @@ Current dataset fingerprint:
 - Conditional station-day aggregation: MAE **19.2 kWh**, MAPE **2.59%** across 910 station-days. This assumes the future session mix is known; it is not an arrival forecast.
 - Top permutation importance: `battery_capacity_kwh` (9.75 kWh RMSE increase), then customer income tier and vehicle model (correlated with capacity); all time/station/district features are near zero.
 
+## SQL and visual insights report
+
+`reports/insights_report.md` / `.html` answer the capstone's airline-style brief ("reduce delays, optimize operations, enhance customer experience") with the actual Warsaw EV evidence: 14 SQL queries executed against MySQL 8.0.46, six charts generated directly from the 114,000-session source, and the verified ML metrics above. The report opens with a mapping table that translates each airline clause into its EV equivalent and is explicit that no airline data is present.
+
+Headline insights:
+
+- **Coverage, not station productivity, is the constraint.** 13 of 18 districts have stations; the five unserved districts hold 9,300 projected EVs and 282 planned plugs. Built coverage is 390 / 1,061 planned plugs = 36.8%; Wola is the worst served district at 12% coverage and 275 projected EVs per plug.
+- **Demand is flat and business-hours driven.** About 1,267 sessions/day with no growth trend; 50.4% of sessions start between 08:00 and 15:59 versus 29.7% overnight (2.47%/hour). Day-of-week variation is under 10%.
+- **Stations are uniform.** The busiest station is only 1.06x the network average, so there is no station-level hotspot to relieve.
+- **Pricing is effectively uniform across districts and tiers** (district averages span 2.551–2.572 PLN/kWh; three session-level tariff points are applied network-wide). Revenue rank equals volume rank.
+- **The income gap is a vehicle gap.** High-tier customers spend 1.89x Low-Mid per session, but sessions per customer and average price per kWh are identical; kWh per session tracks battery capacity (85.6 vs 45.2 kWh).
+- Recommendations are planning and instrumentation actions: close the five-district gap (Praga Południe first), remediate Wola, use ratio-based planning KPIs, manage the 08:00–15:59 peak, and instrument occupancy, queues and state-of-charge before promising wait-time or experience improvements.
+
+Regenerate with `python -m src.insights`; the metrics behind the report are in `reports/insights_metrics.json`.
+
 ## Limitations and recommended next steps
 
 - The dataset appears synthetic or highly standardized; do not treat these scores as production accuracy.
@@ -231,6 +260,8 @@ Current dataset fingerprint:
 - Markdown: `reports/model_evaluation_report.md`
 - HTML: `reports/model_evaluation_report.html`
 - Metrics JSON: `reports/model_metrics.json`
+- Insights report: `reports/insights_report.md` / `reports/insights_report.html`
+- Insights metrics: `reports/insights_metrics.json`
 - Feature importance: `reports/feature_importance.csv`
 - Figures: `reports/figures/`
 - Model: `models/best_model.joblib`
