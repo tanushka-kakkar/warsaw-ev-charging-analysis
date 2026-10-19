@@ -1,0 +1,627 @@
+{
+  "schema_version": "1.0",
+  "created_utc": "2026-10-19T18:27:56+00:00",
+  "project": "Warsaw EV Charging - Session Energy Prediction",
+  "target": "kwh_charged",
+  "target_unit": "kWh",
+  "selected_model": "Ridge Regression",
+  "selected_label": "Ridge Regression (alpha=0.1)",
+  "selected_params": {
+    "alpha": 0.1
+  },
+  "selection_metric": "validation RMSE (lower is better)",
+  "selection_rule": "minimum validation RMSE; ties resolved by MAE then model complexity",
+  "validation_metrics_selected": {
+    "n": 17898,
+    "mae": 4.537420780806834,
+    "rmse": 5.452766532657859,
+    "r2": 0.8164426814917419,
+    "mape_pct": 11.895742408311651,
+    "mean_actual": 39.19130501107926,
+    "mean_predicted": 39.08684470065515,
+    "mean_residual": 0.10446031042411123,
+    "median_absolute_error": 4.145380611059078,
+    "max_absolute_error": 14.37466734546156,
+    "relative_rmse_pct": 13.913204806822277
+  },
+  "candidate_results": [
+    {
+      "family": "DummyRegressor (mean baseline)",
+      "label": "DummyRegressor (mean baseline)",
+      "params": {},
+      "complexity": 0,
+      "fit_seconds": 0.1975656000431627,
+      "validation_metrics": {
+        "n": 17898,
+        "mae": 10.271947509873819,
+        "rmse": 12.72738334106777,
+        "r2": -3.718348467218746e-05,
+        "mape_pct": 31.517906932492405,
+        "mean_actual": 39.19130501107926,
+        "mean_predicted": 39.11369708201783,
+        "mean_residual": 0.07760792906142952,
+        "median_absolute_error": 9.00091270721341,
+        "max_absolute_error": 36.87682040139952,
+        "relative_rmse_pct": 32.47501795990151
+      }
+    },
+    {
+      "family": "Ridge Regression",
+      "label": "Ridge Regression (alpha=0.1)",
+      "params": {
+        "alpha": 0.1
+      },
+      "complexity": 1,
+      "fit_seconds": 0.22594320005737245,
+      "validation_metrics": {
+        "n": 17898,
+        "mae": 4.537420780806834,
+        "rmse": 5.452766532657859,
+        "r2": 0.8164426814917419,
+        "mape_pct": 11.895742408311651,
+        "mean_actual": 39.19130501107926,
+        "mean_predicted": 39.08684470065515,
+        "mean_residual": 0.10446031042411123,
+        "median_absolute_error": 4.145380611059078,
+        "max_absolute_error": 14.37466734546156,
+        "relative_rmse_pct": 13.913204806822277
+      }
+    },
+    {
+      "family": "Ridge Regression",
+      "label": "Ridge Regression (alpha=1.0)",
+      "params": {
+        "alpha": 1.0
+      },
+      "complexity": 1,
+      "fit_seconds": 0.2324125999584794,
+      "validation_metrics": {
+        "n": 17898,
+        "mae": 4.537421847617215,
+        "rmse": 5.452768452538723,
+        "r2": 0.8164425522332295,
+        "mape_pct": 11.895759835946484,
+        "mean_actual": 39.19130501107926,
+        "mean_predicted": 39.08684556612885,
+        "mean_residual": 0.10445944495040657,
+        "median_absolute_error": 4.145194380758701,
+        "max_absolute_error": 14.375085537447951,
+        "relative_rmse_pct": 13.913209705564137
+      }
+    },
+    {
+      "family": "Ridge Regression",
+      "label": "Ridge Regression (alpha=10.0)",
+      "params": {
+        "alpha": 10.0
+      },
+      "complexity": 1,
+      "fit_seconds": 0.317435699980706,
+      "validation_metrics": {
+        "n": 17898,
+        "mae": 4.537432769786622,
+        "rmse": 5.452787937796143,
+        "r2": 0.8164412403599883,
+        "mape_pct": 11.895935632971248,
+        "mean_actual": 39.19130501107926,
+        "mean_predicted": 39.08685419755957,
+        "mean_residual": 0.10445081351968964,
+        "median_absolute_error": 4.145317369718192,
+        "max_absolute_error": 14.379262164252836,
+        "relative_rmse_pct": 13.913259423881538
+      }
+    },
+    {
+      "family": "Ridge Regression",
+      "label": "Ridge Regression (alpha=100.0)",
+      "params": {
+        "alpha": 100.0
+      },
+      "complexity": 1,
+      "fit_seconds": 0.40828770003281534,
+      "validation_metrics": {
+        "n": 17898,
+        "mae": 4.537555257192864,
+        "rmse": 5.453010555890572,
+        "r2": 0.8164262519408862,
+        "mape_pct": 11.89774502350124,
+        "mean_actual": 39.19130501107926,
+        "mean_predicted": 39.086938050280985,
+        "mean_residual": 0.10436696079827887,
+        "median_absolute_error": 4.144994014640345,
+        "max_absolute_error": 14.420490879830787,
+        "relative_rmse_pct": 13.913827453178767
+      }
+    },
+    {
+      "family": "Random Forest",
+      "label": "Random Forest (max_depth=12, min_samples_leaf=5)",
+      "params": {
+        "max_depth": 12,
+        "min_samples_leaf": 5
+      },
+      "complexity": 3,
+      "fit_seconds": 20.624934599967673,
+      "validation_metrics": {
+        "n": 17898,
+        "mae": 4.5578032321421205,
+        "rmse": 5.490177852769137,
+        "r2": 0.8139152748437862,
+        "mape_pct": 11.946139250837032,
+        "mean_actual": 39.19130501107926,
+        "mean_predicted": 39.08259233391065,
+        "mean_residual": 0.10871267716860657,
+        "median_absolute_error": 4.1337333767523745,
+        "max_absolute_error": 17.009859642718347,
+        "relative_rmse_pct": 14.008663021599002
+      }
+    },
+    {
+      "family": "Random Forest",
+      "label": "Random Forest (max_depth=12, min_samples_leaf=20)",
+      "params": {
+        "max_depth": 12,
+        "min_samples_leaf": 20
+      },
+      "complexity": 3,
+      "fit_seconds": 23.898158399853855,
+      "validation_metrics": {
+        "n": 17898,
+        "mae": 4.551434055257885,
+        "rmse": 5.479383342030639,
+        "r2": 0.8146462962867362,
+        "mape_pct": 11.932003061428992,
+        "mean_actual": 39.19130501107926,
+        "mean_predicted": 39.08647415121388,
+        "mean_residual": 0.10483085986538405,
+        "median_absolute_error": 4.132373410714749,
+        "max_absolute_error": 16.31410868840009,
+        "relative_rmse_pct": 13.981119895042113
+      }
+    },
+    {
+      "family": "Random Forest",
+      "label": "Random Forest (max_depth=None, min_samples_leaf=5)",
+      "params": {
+        "max_depth": null,
+        "min_samples_leaf": 5
+      },
+      "complexity": 3,
+      "fit_seconds": 29.01247200020589,
+      "validation_metrics": {
+        "n": 17898,
+        "mae": 4.630335169837628,
+        "rmse": 5.620443062145766,
+        "r2": 0.8049800667724557,
+        "mape_pct": 12.127263672588368,
+        "mean_actual": 39.19130501107926,
+        "mean_predicted": 39.06045946423583,
+        "mean_residual": 0.13084554684343394,
+        "median_absolute_error": 4.132811994442042,
+        "max_absolute_error": 19.350654929989027,
+        "relative_rmse_pct": 14.341045955364038
+      }
+    },
+    {
+      "family": "Random Forest",
+      "label": "Random Forest (max_depth=None, min_samples_leaf=20)",
+      "params": {
+        "max_depth": null,
+        "min_samples_leaf": 20
+      },
+      "complexity": 3,
+      "fit_seconds": 27.384231500094756,
+      "validation_metrics": {
+        "n": 17898,
+        "mae": 4.565910795956211,
+        "rmse": 5.5053034824840115,
+        "r2": 0.812888522723531,
+        "mape_pct": 11.970409582940974,
+        "mean_actual": 39.19130501107926,
+        "mean_predicted": 39.08342766704255,
+        "mean_residual": 0.10787734403670975,
+        "median_absolute_error": 4.129101872607356,
+        "max_absolute_error": 16.82733129005441,
+        "relative_rmse_pct": 14.047257372337254
+      }
+    },
+    {
+      "family": "HistGradientBoosting",
+      "label": "HistGradientBoosting (max_leaf_nodes=15)",
+      "params": {
+        "max_leaf_nodes": 15
+      },
+      "complexity": 2,
+      "fit_seconds": 2.559844800038263,
+      "validation_metrics": {
+        "n": 17898,
+        "mae": 4.540741819738128,
+        "rmse": 5.461952717570752,
+        "r2": 0.8158236886156818,
+        "mape_pct": 11.903243532925607,
+        "mean_actual": 39.19130501107926,
+        "mean_predicted": 39.088257839003646,
+        "mean_residual": 0.10304717207561309,
+        "median_absolute_error": 4.137858713173802,
+        "max_absolute_error": 15.946322563074737,
+        "relative_rmse_pct": 13.93664415111126
+      }
+    },
+    {
+      "family": "HistGradientBoosting",
+      "label": "HistGradientBoosting (max_leaf_nodes=31)",
+      "params": {
+        "max_leaf_nodes": 31
+      },
+      "complexity": 2,
+      "fit_seconds": 3.3106037001125515,
+      "validation_metrics": {
+        "n": 17898,
+        "mae": 4.547325290852169,
+        "rmse": 5.475573027702252,
+        "r2": 0.8149039932818136,
+        "mape_pct": 11.916074498219114,
+        "mean_actual": 39.19130501107926,
+        "mean_predicted": 39.08841473244168,
+        "mean_residual": 0.1028902786375761,
+        "median_absolute_error": 4.129159411076596,
+        "max_absolute_error": 16.47854643722374,
+        "relative_rmse_pct": 13.971397548906129
+      }
+    }
+  ],
+  "capacity_heuristic": {
+    "description": "mean train kWh per battery kWh multiplied by session battery capacity",
+    "train_ratio": 0.6498357283237621,
+    "median_train_battery_kwh": 60.5,
+    "validation_metrics": {
+      "n": 17898,
+      "mae": 4.535353609190459,
+      "rmse": 5.450425815439009,
+      "r2": 0.8166002395144512,
+      "mape_pct": 11.891678370969474,
+      "mean_actual": 39.19130501107926,
+      "mean_predicted": 39.090026261087296,
+      "mean_residual": 0.10127874999196716,
+      "median_absolute_error": 4.138332547039205,
+      "max_absolute_error": 14.25612329265995,
+      "relative_rmse_pct": 13.907232264652048
+    }
+  },
+  "final_fit": {
+    "rows": 96322,
+    "fit_seconds": 0.4350558000151068,
+    "includes_validation": true
+  },
+  "split": {
+    "train_rows": 78424,
+    "validation_rows": 17898,
+    "test_rows": 17674,
+    "train_start": "2025-08-11",
+    "train_end": "2025-10-11",
+    "validation_start": "2025-10-12",
+    "validation_end": "2025-10-25",
+    "test_start": "2025-10-26",
+    "test_end": "2025-11-08",
+    "train_dates": 62,
+    "validation_dates": 14,
+    "test_dates": 14,
+    "validation_fraction_actual": 0.15700550896522686,
+    "test_fraction_actual": 0.15504052773781538
+  },
+  "data_profile": {
+    "source_files": {
+      "charging_sessions.csv": {
+        "rows": 114000,
+        "columns": 7,
+        "column_names": [
+          "session_id",
+          "customer_id",
+          "station_id",
+          "session_start_time",
+          "kwh_charged",
+          "cost_per_kwh",
+          "total_cost"
+        ],
+        "size_bytes": 10438947,
+        "missing_cells": 0,
+        "duplicate_rows": 0
+      },
+      "charging_stations.csv": {
+        "rows": 65,
+        "columns": 7,
+        "column_names": [
+          "station_id",
+          "district_name",
+          "income_tier",
+          "operator_name",
+          "plugs_count",
+          "latitude",
+          "longitude"
+        ],
+        "size_bytes": 4585,
+        "missing_cells": 0,
+        "duplicate_rows": 0
+      },
+      "customers.csv": {
+        "rows": 8000,
+        "columns": 4,
+        "column_names": [
+          "customer_id",
+          "income_tier",
+          "car_model",
+          "battery_capacity_kwh"
+        ],
+        "size_bytes": 260105,
+        "missing_cells": 0,
+        "duplicate_rows": 0
+      },
+      "districts.csv": {
+        "rows": 18,
+        "columns": 5,
+        "column_names": [
+          "district_name",
+          "income_tier",
+          "projected_evs",
+          "projected_plugs",
+          "projected_regular_customers"
+        ],
+        "size_bytes": 619,
+        "missing_cells": 0,
+        "duplicate_rows": 0
+      }
+    },
+    "fingerprint": "2a5e090ba972d96c66865353df5977a6bd7b485aa4428d6914e3304f633bfe9c",
+    "raw_sessions_rows": 114000,
+    "raw_customers_rows": 8000,
+    "raw_stations_rows": 65,
+    "raw_districts_rows": 18,
+    "cost_identity_max_abs_error": 8.526512829121202e-14,
+    "duplicate_station_start_time": 1841,
+    "dropped_rows": {
+      "invalid_start_time": 0,
+      "missing_identifiers": 0,
+      "exact_duplicate_rows": 0,
+      "duplicate_session_id": 0,
+      "duplicate_customer_start_time": 4,
+      "invalid_target": 0
+    },
+    "invalid_price_rows": 0,
+    "lookup_duplicate_ids": {
+      "customers": 0,
+      "stations": 0,
+      "districts": 0
+    },
+    "referential_coverage": {
+      "customer_sessions_matched": 113996,
+      "customer_sessions_unmatched": 0,
+      "station_sessions_matched": 113996,
+      "station_sessions_unmatched": 0
+    },
+    "invalid_battery_rows": 0,
+    "invalid_coordinate_rows": 0,
+    "negative_projection_rows": 0,
+    "target_summary": {
+      "count": 113996,
+      "mean": 39.12532789340382,
+      "std": 12.729275051017035,
+      "min": 13.4010150199694,
+      "p01": 14.38195565035047,
+      "p05": 18.264054623195225,
+      "p25": 30.07853751972412,
+      "median": 37.93472821840165,
+      "p75": 48.06575062076036,
+      "p95": 60.78637476707391,
+      "p99": 70.62947127093817,
+      "max": 75.99584058468777
+    },
+    "target_iqr": {
+      "q1": 30.07853751972412,
+      "q3": 48.06575062076036,
+      "lower_bound": 3.097717868169756,
+      "upper_bound": 75.04657027231472,
+      "outlier_count": 96
+    },
+    "ratio_to_battery": {
+      "count": 113996,
+      "mean": 0.6500271196124321,
+      "std": 0.08669804495721493,
+      "min": 0.5000005046785571,
+      "p01": 0.5029080310385508,
+      "p05": 0.5147624980778295,
+      "p25": 0.5747134319656039,
+      "median": 0.6500247245930968,
+      "p75": 0.7249896337597684,
+      "p95": 0.7852748722073714,
+      "p99": 0.7969400262793944,
+      "max": 0.7999977941397275
+    },
+    "physical_ratio": {
+      "below_0_499": 0,
+      "above_0_801": 0,
+      "above_battery": 0,
+      "min": 0.5000005046785571,
+      "max": 0.7999977941397275
+    },
+    "date_min": "2025-08-11T00:00:00",
+    "date_max": "2025-11-08T23:58:00",
+    "span_days": 89,
+    "unique_customers": 8000,
+    "unique_stations": 65,
+    "unique_districts": 13,
+    "sessions_per_customer": {
+      "count": 8000,
+      "mean": 14.2495,
+      "std": 3.84747971242438,
+      "min": 2.0,
+      "p01": 6.0,
+      "p05": 8.0,
+      "p25": 12.0,
+      "median": 14.0,
+      "p75": 17.0,
+      "p95": 21.0,
+      "p99": 24.0,
+      "max": 32.0
+    },
+    "sessions_per_station": {
+      "count": 65,
+      "mean": 1753.7846153846153,
+      "std": 42.92234714709093,
+      "min": 1654.0,
+      "p01": 1671.28,
+      "p05": 1687.6,
+      "p25": 1725.0,
+      "median": 1755.0,
+      "p75": 1785.0,
+      "p95": 1821.3999999999999,
+      "p99": 1852.8,
+      "max": 1856.0
+    },
+    "price_values": {
+      "1.851397": 33818,
+      "2.704520": 57410,
+      "3.256199": 22768
+    },
+    "category_counts": {
+      "customer_income_tier": {
+        "Low-Mid": 56833,
+        "Mid-Range": 40220,
+        "High": 16943
+      },
+      "car_model": {
+        "Peugeot e-208": 9755,
+        "Fiat 500e": 9626,
+        "Renault Zoe": 9531,
+        "Citroën ë-C4": 9425,
+        "Dacia Spring": 9384,
+        "Opel Corsa-e": 9112,
+        "Hyundai Kona Electric": 5396,
+        "Skoda Enyaq iV": 5234,
+        "BYD Atto 3": 5231,
+        "Volkswagen ID.4": 5224,
+        "Kia EV6": 5032,
+        "MG ZS EV": 4994,
+        "Hyundai Ioniq 5": 4793,
+        "Nissan Leaf": 4316,
+        "Audi e-tron": 3013,
+        "Tesla Model Y": 2926,
+        "BMW i4": 2923,
+        "Ford Mustang Mach-E": 2744,
+        "Porsche Taycan": 2717,
+        "Tesla Model 3": 2620
+      },
+      "station_income_tier": {
+        "Mid-Range": 52322,
+        "Low-Mid": 38865,
+        "High": 22809
+      },
+      "operator_name": {
+        "Ekoenergetyka": 26556,
+        "GreenWay": 26474,
+        "Tesla": 26178,
+        "Orlen Charge": 20553,
+        "Tauron": 14235
+      },
+      "district_name": {
+        "Ursynów": 20956,
+        "Wesoła": 19605,
+        "Wilanów": 13956,
+        "Włochy": 10447,
+        "Targówek": 8745,
+        "Ochota": 8696,
+        "Mokotów": 8654,
+        "Śródmieście": 5259,
+        "Żoliborz": 3594,
+        "Wola": 3569,
+        "Rembertów": 3565,
+        "Bemowo": 3530,
+        "Ursus": 3420
+      }
+    },
+    "modeling_rows": 113996,
+    "missing_feature_values": {},
+    "feature_columns": [
+      "battery_capacity_kwh",
+      "cost_per_kwh",
+      "plugs_count",
+      "latitude",
+      "longitude",
+      "projected_evs",
+      "projected_plugs",
+      "projected_regular_customers",
+      "evs_per_projected_plug",
+      "hour",
+      "day_of_week",
+      "is_weekend",
+      "hour_sin",
+      "hour_cos",
+      "dow_sin",
+      "dow_cos",
+      "customer_income_tier",
+      "car_model",
+      "station_income_tier",
+      "operator_name",
+      "district_name"
+    ],
+    "numeric_features": [
+      "battery_capacity_kwh",
+      "cost_per_kwh",
+      "plugs_count",
+      "latitude",
+      "longitude",
+      "projected_evs",
+      "projected_plugs",
+      "projected_regular_customers",
+      "evs_per_projected_plug",
+      "hour",
+      "day_of_week",
+      "is_weekend",
+      "hour_sin",
+      "hour_cos",
+      "dow_sin",
+      "dow_cos"
+    ],
+    "categorical_features": [
+      "customer_income_tier",
+      "car_model",
+      "station_income_tier",
+      "operator_name",
+      "district_name"
+    ],
+    "final_missing_feature_values": 0
+  },
+  "data_fingerprint": "2a5e090ba972d96c66865353df5977a6bd7b485aa4428d6914e3304f633bfe9c",
+  "feature_columns": [
+    "battery_capacity_kwh",
+    "cost_per_kwh",
+    "plugs_count",
+    "latitude",
+    "longitude",
+    "projected_evs",
+    "projected_plugs",
+    "projected_regular_customers",
+    "evs_per_projected_plug",
+    "hour",
+    "day_of_week",
+    "is_weekend",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "customer_income_tier",
+    "car_model",
+    "station_income_tier",
+    "operator_name",
+    "district_name"
+  ],
+  "random_state": 42,
+  "validation_fraction_configured": 0.15,
+  "test_fraction_configured": 0.15,
+  "environment": {
+    "python": "3.14.6",
+    "scikit_learn": "1.9.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4",
+    "platform": "Windows-11-10.0.26200-SP0"
+  }
+}

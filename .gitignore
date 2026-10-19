@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local configuration (keep config.example.json in Git)
+configs/config.json
+configs/config.local.json
+
+# Generated model artifacts (large binaries)
+models/*.joblib
+models/*.pkl
+# Keep the final selected, small Ridge model for reproducible inference
+!models/best_model.joblib
+
+# Generated row-level predictions (may contain session-level records)
+reports/test_predictions.csv
+reports/predictions.csv
+reports/new_predictions.csv
+reports/predict_demo_*.csv
+reports/*.log
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

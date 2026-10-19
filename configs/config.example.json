@@ -1,0 +1,8 @@
+{
+  "data_dir": "C:/path/to/Warsaw EV Charging",
+  "model_dir": "models",
+  "reports_dir": "reports",
+  "random_state": 42,
+  "validation_fraction": 0.15,
+  "test_fraction": 0.15
+}
