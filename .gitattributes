@@ -1,2 +1,5 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Keep generated reports and exported dashboard images out of GitHub's
+# language statistics so the repository is classified by its source code.
+reports/*.html linguist-documentation
+reports/*.json linguist-documentation
+docs/** linguist-documentation
