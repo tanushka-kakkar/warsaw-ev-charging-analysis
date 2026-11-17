@@ -27,6 +27,18 @@ Selected model versus the dummy baseline: **57.4% lower RMSE** and **56.2% lower
 
 Important caveat: a transparent one-feature benchmark (`0.65 × battery capacity`) is statistically indistinguishable from the ML model. The current feature set adds no measurable accuracy beyond vehicle battery capacity. The model is therefore a useful planning prototype, not evidence of a production-grade operational forecasting system.
 
+## Dashboard preview
+
+A four-page Power BI report built on the same dataset. Full-resolution exports are in `docs/dashboard/`.
+
+![Infrastructure overview](docs/dashboard/page-1.png)
+
+| Usage and demand | Customer behaviour |
+|---|---|
+| ![Usage and demand](docs/dashboard/page-2.png) | ![Customer behaviour](docs/dashboard/page-3.png) |
+
+![Revenue and planning](docs/dashboard/page-4.png)
+
 ## Prediction task
 
 - **Target:** `kwh_charged` — delivered energy in one charging session.
@@ -91,6 +103,11 @@ All imputers, encoders, scalers and estimators live inside the saved scikit-lear
 │   ├── feature_importance.csv
 │   ├── segment_metrics_*.csv
 │   └── figures/*.png                  # model diagnostics + insights_*.png
+├── docs/
+│   └── dashboard/page-*.png           # four-page Power BI dashboard exports
+├── sql/
+│   ├── warsaw_ev_analysis.sql         # 14 MySQL queries
+│   └── query_outputs.txt              # executed query results
 ├── src/
 │   ├── config.py
 │   ├── data_loader.py
@@ -245,6 +262,11 @@ Headline insights:
 
 Regenerate with `python -m src.insights`; the metrics behind the report are in `reports/insights_metrics.json`.
 
+The standalone SQL work is also committed:
+
+- `sql/warsaw_ev_analysis.sql` — 14 MySQL queries covering district coverage, station usage, energy, revenue, customer tiers and planned plug gaps.
+- `sql/query_outputs.txt` — the executed results behind the insights above.
+
 ## Limitations and recommended next steps
 
 - The dataset appears synthetic or highly standardized; do not treat these scores as production accuracy.
@@ -264,6 +286,8 @@ Regenerate with `python -m src.insights`; the metrics behind the report are in `
 - Insights metrics: `reports/insights_metrics.json`
 - Feature importance: `reports/feature_importance.csv`
 - Figures: `reports/figures/`
+- Power BI dashboard exports: `docs/dashboard/`
+- SQL queries and outputs: `sql/`
 - Model: `models/best_model.joblib`
 - Metadata: `models/model_metadata.json`
 

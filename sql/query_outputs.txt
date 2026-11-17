@@ -1,0 +1,205 @@
+marker
+===== Q1 =====
+district_name	income_tier
+Śródmieście	High
+Wilanów	High
+Żoliborz	High
+Bemowo	Low-Mid
+Białołęka	Low-Mid
+Praga Północ	Low-Mid
+Praga Południe	Low-Mid
+Rembertów	Low-Mid
+Targówek	Low-Mid
+Ursus	Low-Mid
+Wawer	Low-Mid
+Wesoła	Low-Mid
+Bielany	Mid-Range
+Mokotów	Mid-Range
+Ochota	Mid-Range
+Ursynów	Mid-Range
+Włochy	Mid-Range
+Wola	Mid-Range
+marker
+===== Q2 =====
+district_name	income_tier	total_stations
+Ursynów	Mid-Range	12
+Wesoła	Low-Mid	11
+Wilanów	High	8
+Włochy	Mid-Range	6
+Mokotów	Mid-Range	5
+Ochota	Mid-Range	5
+Targówek	Low-Mid	5
+Śródmieście	High	3
+Bemowo	Low-Mid	2
+Rembertów	Low-Mid	2
+Ursus	Low-Mid	2
+Wola	Mid-Range	2
+Żoliborz	High	2
+Białołęka	Low-Mid	0
+Bielany	Mid-Range	0
+Praga Północ	Low-Mid	0
+Praga Południe	Low-Mid	0
+Wawer	Low-Mid	0
+marker
+===== Q3 =====
+district_name	income_tier	total_stations	total_plugs
+Ursynów	Mid-Range	12	72
+Wesoła	Low-Mid	11	66
+Wilanów	High	8	48
+Włochy	Mid-Range	6	36
+Mokotów	Mid-Range	5	30
+Ochota	Mid-Range	5	30
+Targówek	Low-Mid	5	30
+Śródmieście	High	3	18
+Bemowo	Low-Mid	2	12
+Rembertów	Low-Mid	2	12
+Ursus	Low-Mid	2	12
+Wola	Mid-Range	2	12
+Żoliborz	High	2	12
+Białołęka	Low-Mid	0	0
+Bielany	Mid-Range	0	0
+Praga Północ	Low-Mid	0	0
+Praga Południe	Low-Mid	0	0
+Wawer	Low-Mid	0	0
+marker
+===== Q4 =====
+total_charging_sessions
+114000
+marker
+===== Q5 =====
+avg_kwh_per_session	min_kwh	max_kwh
+39.1251	13.401	75.9958
+marker
+===== Q6 =====
+district_name	income_tier	total_sessions	total_kwh
+Ursynów	Mid-Range	20956	820629.82
+Wesoła	Low-Mid	19606	767641.26
+Wilanów	High	13956	546042.1
+Włochy	Mid-Range	10447	409485.95
+Targówek	Low-Mid	8746	341296.66
+Mokotów	Mid-Range	8655	339212.79
+Ochota	Mid-Range	8696	339168.45
+Śródmieście	High	5259	205791.69
+Żoliborz	High	3595	141089.31
+Wola	Mid-Range	3569	139796.55
+Rembertów	Low-Mid	3565	138615.39
+Bemowo	Low-Mid	3530	137870.73
+Ursus	Low-Mid	3420	133624.39
+marker
+===== Q7 =====
+station_id	district_name	operator_name	total_sessions
+163	Wesoła	Tauron	1856
+150	Wesoła	GreenWay	1851
+27	Wesoła	GreenWay	1825
+92	Ursynów	Ekoenergetyka	1824
+36	Ursynów	Ekoenergetyka	1811
+marker
+===== Q8 =====
+district_name	income_tier	total_sessions	total_revenue
+Ursynów	Mid-Range	20956	2101299.59
+Wesoła	Low-Mid	19606	1964951.35
+Wilanów	High	13956	1398085.83
+Włochy	Mid-Range	10447	1051339.58
+Targówek	Low-Mid	8746	876870.2
+Mokotów	Mid-Range	8655	871968.22
+Ochota	Mid-Range	8696	868531.89
+Śródmieście	High	5259	525634.52
+Żoliborz	High	3595	359931.26
+Wola	Mid-Range	3569	357333.01
+Rembertów	Low-Mid	3565	354184.96
+Bemowo	Low-Mid	3530	352143.77
+Ursus	Low-Mid	3420	341727.52
+marker
+===== Q9 =====
+income_tier	customers	total_sessions	avg_cost_per_session
+High	1190	16944	142.4494
+Mid-Range	2820	40220	117.7782
+Low-Mid	3990	56836	75.1865
+marker
+===== Q10 =====
+avg_kwh_per_customer	min_kwh_per_customer	max_kwh_per_customer
+557.5331	56.4754	1898.1107
+marker
+===== Q11 =====
+district_name	income_tier	projected_evs	planned_plugs	available_plugs	stations	projected_evs_per_plug
+Mokotów	Mid-Range	3500	106	30	5	116.67
+Wola	Mid-Range	3300	100	12	2	275.00
+Wilanów	High	3100	94	48	8	64.58
+Ursynów	Mid-Range	2900	88	72	12	40.28
+Śródmieście	High	2700	82	18	3	150.00
+Praga Południe	Low-Mid	2500	76	0	0	NULL
+Białołęka	Low-Mid	2400	73	0	0	NULL
+Bielany	Mid-Range	2300	70	0	0	NULL
+Bemowo	Low-Mid	1800	55	12	2	150.00
+Żoliborz	High	1800	55	12	2	150.00
+Ochota	Mid-Range	1600	49	30	5	53.33
+Targówek	Low-Mid	1400	42	30	5	46.67
+Włochy	Mid-Range	1200	36	36	6	33.33
+Ursus	Low-Mid	1100	33	12	2	91.67
+Wawer	Low-Mid	1100	33	0	0	NULL
+Praga Północ	Low-Mid	1000	30	0	0	NULL
+Wesoła	Low-Mid	700	21	66	11	10.61
+Rembertów	Low-Mid	600	18	12	2	50.00
+marker
+===== Q12 =====
+district_name	income_tier	projected_evs	available_plugs	plug_shortfall
+Mokotów	Mid-Range	3500	30	3470
+Wola	Mid-Range	3300	12	3288
+Wilanów	High	3100	48	3052
+Ursynów	Mid-Range	2900	72	2828
+Śródmieście	High	2700	18	2682
+Praga Południe	Low-Mid	2500	0	2500
+Białołęka	Low-Mid	2400	0	2400
+Bielany	Mid-Range	2300	0	2300
+Bemowo	Low-Mid	1800	12	1788
+Żoliborz	High	1800	12	1788
+Ochota	Mid-Range	1600	30	1570
+Targówek	Low-Mid	1400	30	1370
+Włochy	Mid-Range	1200	36	1164
+Wawer	Low-Mid	1100	0	1100
+Ursus	Low-Mid	1100	12	1088
+Praga Północ	Low-Mid	1000	0	1000
+Wesoła	Low-Mid	700	66	634
+Rembertów	Low-Mid	600	12	588
+marker
+===== Q13 =====
+district_name	projected_evs	actual_kwh	kwh_per_projected_ev
+Wesoła	700	767641.256772287	1096.6304
+Włochy	1200	409485.9492908766	341.2383
+Ursynów	2900	820629.8182146851	282.9758
+Targówek	1400	341296.6616611318	243.7833
+Rembertów	600	138615.38798900752	231.0256
+Ochota	1600	339168.44672560546	211.9803
+Wilanów	3100	546042.097224109	176.1426
+Ursus	1100	133624.38514122507	121.4767
+Mokotów	3500	339212.7928887981	96.9179
+Żoliborz	1800	141089.30678754192	78.3829
+Bemowo	1800	137870.7285080452	76.5948
+Śródmieście	2700	205791.685152658	76.2191
+Wola	3300	139796.5545133605	42.3626
+Białołęka	2400	0	0
+Bielany	2300	0	0
+Praga Północ	1000	0	0
+Praga Południe	2500	0	0
+Wawer	1100	0	0
+marker
+===== Q14 =====
+district_name	income_tier	projected_evs	available_plugs	plug_plan_coverage_pct	actual_kwh	actual_kwh_per_ev	sessions_per_ev	readiness_rank
+Wesoła	Low-Mid	700	66	314.29	767641.2567722837	1096.63	28.0086	1
+Włochy	Mid-Range	1200	36	100.00	409485.9492908744	341.24	8.7058	2
+Ursynów	Mid-Range	2900	72	81.82	820629.8182146803	282.98	7.2262	3
+Targówek	Low-Mid	1400	30	71.43	341296.66166113137	243.78	6.2471	4
+Rembertów	Low-Mid	600	12	66.67	138615.387989008	231.03	5.9417	5
+Ochota	Mid-Range	1600	30	61.22	339168.44672560564	211.98	5.4350	6
+Wilanów	High	3100	48	51.06	546042.09722411	176.14	4.5019	7
+Ursus	Low-Mid	1100	12	36.36	133624.38514122507	121.48	3.1091	8
+Mokotów	Mid-Range	3500	30	28.30	339212.7928887974	96.92	2.4729	9
+Śródmieście	High	2700	18	21.95	205791.6851526575	76.22	1.9478	10
+Bemowo	Low-Mid	1800	12	21.82	137870.72850804514	76.59	1.9611	11
+Żoliborz	High	1800	12	21.82	141089.30678754183	78.38	1.9972	12
+Wola	Mid-Range	3300	12	12.00	139796.55451336072	42.36	1.0815	13
+Białołęka	Low-Mid	2400	0	0.00	0	0	0.0000	14
+Bielany	Mid-Range	2300	0	0.00	0	0	0.0000	14
+Praga Północ	Low-Mid	1000	0	0.00	0	0	0.0000	14
+Praga Południe	Low-Mid	2500	0	0.00	0	0	0.0000	14
+Wawer	Low-Mid	1100	0	0.00	0	0	0.0000	14
